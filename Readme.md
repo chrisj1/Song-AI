@@ -1,3 +1,3 @@
 # Song AI
 -----
-By Chris Jerrett, ...
+By Chris Jerrett, Andrew Khanschassoff, Harr Darr
