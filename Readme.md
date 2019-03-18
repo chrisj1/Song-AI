@@ -1,6 +1,6 @@
 	# Song AI
 
-One Paragraph of project description goes here
+
 
 ## Getting Started
 
@@ -74,14 +74,14 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 By Chris Jerrett, Andrew Khanschassoff, Harrison Darbin, Adian Safar
 Chris Jerrett
-* **Chris Jerrett** - *Went to all boys school* - [github](https://github.com/)
+* **Chris Jerrett** - *Went to all boys school* - [GitHub](https://github.com/chrisj1)
 
-* **Andrew Khanschassoff** - *It has 13 letters* - [github](https://github.com/)
+* **Andrew Khanschassoff** - *It has 13 letters* - [GitHub](https://github.com/AndrewKhans)
 
 
-* **Harrison Darbin** - *Harr Darr* - [github](https://github.com/)
+* **Harrison Darbin** - *Harr Darr* - [GitHub](https://github.com/HarrDarbo)
 
-* **Aidan Safar** - *Currently in Data Structures* - [github](https://github.com/)
+* **Aidan Safar** - *Currently in Data Structures* - [GitHub](https://github.com/)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
