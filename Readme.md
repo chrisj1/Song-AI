@@ -18,7 +18,7 @@ download other thing
 
 After that, it should be installed
 
-### Using the AI
+## Using the AI
 
 Put songs in this folder, then type 
 
