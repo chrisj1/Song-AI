@@ -53,10 +53,10 @@ layer_size = [256,256,256,256] # number of nodes in each layer
 
 model = Sequential()
 
-model.add(CuDNNLSTM(layer_size[0], input_shape =(X.shape[1], X.shape[2]), return_sequences = True))
+model.add(LSTM(layer_size[0], input_shape =(X.shape[1], X.shape[2]), return_sequences = True))
 
 for i in range(1,LSTM_layer_num) :
-    model.add(CuDNNLSTM(layer_size[i], return_sequences=True))
+    model.add(LSTM(layer_size[i], return_sequences=True))
 
 model.add(Flatten())
 
