@@ -4,24 +4,29 @@ This is an AI designed to write lyrics, after studying from a lot of classic roc
 
 ## Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+In your console type in
 
 ```
-Give the example
+download thing
 ```
 
-And repeat
+Then do
 
 ```
-until finished
+download other thing
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+After that, it should be installed
 
 ### Using the AI
 
+Put songs in this folder, then type 
+
+```
+make lyrics
+```
+
+in the console to generate some lyrics
 
 ## Built With
 
