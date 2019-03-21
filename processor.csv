@@ -1,0 +1,7 @@
+import csv
+
+songs = 
+with open('eggs.csv', newline='') as csvfile:
+reader = csv.reader(csvfile)
+     for row in reader:
+          print(', '.join(row))
