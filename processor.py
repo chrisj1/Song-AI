@@ -48,8 +48,8 @@ X = X/ float(n_vocab)
 # One hot encode the output targets :
 y = np_utils.to_categorical(data_y)
 
-LSTM_layer_num = 4 # number of LSTM layers
-layer_size = [256,256,256,256] # number of nodes in each layer
+LSTM_layer_num = 3 # number of LSTM layers
+layer_size = [128,128,128] # number of nodes in each layer
 
 model = Sequential()
 
@@ -68,11 +68,11 @@ model.summary()
 
 # Configure the checkpoint :
 checkpoint_name = 'Weights-LSTM-improvement-{epoch:03d}-{loss:.5f}-bigger.hdf5'
-checkpoint = ModelCheckpoint(checkpoint_name, monitor='loss', verbose = 1, save_best_only = True, mode ='min')
+checkpoint = ModelCheckpoint(checkpoint_name, monitor='loss', verbose = 1, save_best_only = False, mode ='min')
 callbacks_list = [checkpoint]
 
 # Fit the model :
-model_params = {'epochs':30,
+model_params = {'epochs':1,
                 'batch_size':128,
                 'callbacks':callbacks_list,
                 'verbose':1,
@@ -82,21 +82,10 @@ model_params = {'epochs':30,
                 'initial_epoch':0,
                 'steps_per_epoch':None,
                 'validation_steps':None}
-model.fit(X,
-          y,
-          epochs = model_params['epochs'],
-           batch_size = model_params['batch_size'],
-           callbacks= model_params['callbacks'],
-           verbose = model_params['verbose'],
-           validation_split = model_params['validation_split'],
-           validation_data = model_params['validation_data'],
-           shuffle = model_params['shuffle'],
-           initial_epoch = model_params['initial_epoch'],
-           steps_per_epoch = model_params['steps_per_epoch'],
-           validation_steps = model_params['validation_steps'])
+
 
 # Load wights file :
-wights_file = './models/Weights-LSTM-improvement-004-2.49538-bigger.hdf5' # weights file path
+wights_file = 'Weights-LSTM-improvement-001-3.16343-bigger.hdf5' # weights file path
 model.load_weights(wights_file)
 model.compile(loss = 'categorical_crossentropy', optimizer = 'adam')
 
